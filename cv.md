@@ -34,4 +34,4 @@
 ## **About me**
 The main aim of my life is mental and physical development. I’m always ready to take lots of responsibilities, to change myself and to learn new things. I’m very friendly and positive person. I don’t have bad habits and I’ve already served in army.
 
-I've been learning English for about a year by myself and I've already reached a Pre-Intermediate level (A2). I think it's a good result but I'm planing to reach an Intermediate level (B1) of English by at the end of this year.
+I've been learning English for about a year by myself and I've already reached a Pre-Intermediate level (A2). I think it's a good result but I'm planing to reach an Intermediate level (B1) of English by at the end of this year. 
