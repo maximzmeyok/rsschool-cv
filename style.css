@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    display: flex;
+    justify-self: center;
+}
+.cv {
+    display: inline-block;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.part-1 {
+    display: flex;
+    align-items: flex-end;
+}
+.img-wrapper {
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(189, 189, 189, .5);
+    padding: 10px;
+}
+.title {
+    display: inline-block;
+    width: 600px;
+    padding: 10px;
+}
+.title > h2 {
+    margin-bottom: 20px;
+}
+.title li {
+    list-style: none;
+    padding: 5px 0px;
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+.img > img {
+    width: 100%;
+}
+.part-2 {
+    display: flex;
+}
+.skills {
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(189, 189, 189, .5);
+    padding: 10px;
+}
+.skills ul {
+    position: relative;
+    left: 15px;
+}
+.skills li {
+    padding: 5px 0px;
+}
+.education {
+    display: inline-block;
+    width: 600px;
+    padding: 10px;
+}
+.education ul {
+    position: relative;
+    left: 15px;
+}
+.education li {
+    padding: 5px 0px;
+}
+.part-3 {
+    display: flex;
+}
+.softskills {
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(189, 189, 189, .5);
+    padding: 10px;
+}
+.softskills p {
+    padding: 5px 0px;
+}
+.experience {
+    display: inline-block;
+    width: 600px;
+    padding: 10px;
+}
+.experience ul {
+    position: relative;
+    left: 15px;
+}
+.experience li {
+    padding: 5px 0px;
+}
+footer {
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(189, 189, 189, .5);
+    padding: 10px;
+    align-items: center;
+}
+footer p {
+    margin: 10px 0px;
+}
+footer img {
+    height: 50px;
+}
