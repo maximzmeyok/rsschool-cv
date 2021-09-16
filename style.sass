@@ -1,0 +1,41 @@
+body
+    font-size: 16px
+    color: #000000
+    font-weight: 500
+    font-family: Montserrat
+    line-height: 150%
+.container
+    max-width: 1024px
+    margin: 0px auto
+    padding: 0px 15px
+.wrapper
+    min-height: 100%
+    overflow: hidden
+    .header
+        position: absolute
+        width: 100%
+        left: 0
+        top: 0
+        z-index: 50
+        &__container
+            display: flex
+            min-height: 100px
+            align-items: center
+            justify-content: space-between
+            > h1
+                margin: 0px 120px 0px 0px
+                font-size: 24px
+                font-weight: 700
+                color: inherit
+            nav
+                font-weight: 700
+                padding: 10px 0px
+                ul
+                    display: flex
+                    flex-wrap: wrap
+                    li:not(:last-child)
+                        margin: 0px 40px 0px 0px
+                    a
+                        color: inherit
+    .main
+        

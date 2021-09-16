@@ -1,108 +1,60 @@
-/** {
-    padding: 0px;
-    margin: 0px;
-}
 body {
-    display: flex;
-    justify-self: center;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  font-family: Montserrat;
+  line-height: 150%;
 }
-.cv {
-    display: inline-block;
-    margin: auto;
-    box-sizing: border-box;
-    border: 1px solid black;
+
+.container {
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 0px 15px;
 }
-.part-1 {
-    display: flex;
-    align-items: flex-end;
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
 }
-.img-wrapper {
-    display: inline-block;
-    width: 300px;
-    background-color: rgba(189, 189, 189, .5);
-    padding: 10px;
+.wrapper .header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
 }
-.title {
-    display: inline-block;
-    width: 600px;
-    padding: 10px;
+.wrapper .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.title > h2 {
-    margin-bottom: 20px;
+.wrapper .header__container > h1 {
+  margin: 0px 120px 0px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
 }
-.title li {
-    list-style: none;
-    padding: 5px 0px;
+.wrapper .header__container nav {
+  font-weight: 700;
+  padding: 10px 0px;
 }
-.img {
-    display: flex;
-    justify-content: center;
+.wrapper .header__container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.img > img {
-    width: 100%;
+.wrapper .header__container nav ul li:not(:last-child) {
+  margin: 0px 40px 0px 0px;
 }
-.part-2 {
-    display: flex;
+.wrapper .header__container nav ul a {
+  color: inherit;
 }
-.skills {
-    display: inline-block;
-    width: 300px;
-    background-color: rgba(189, 189, 189, .5);
-    padding: 10px;
-}
-.skills ul {
-    position: relative;
-    left: 15px;
-}
-.skills li {
-    padding: 5px 0px;
-}
-.education {
-    display: inline-block;
-    width: 600px;
-    padding: 10px;
-}
-.education ul {
-    position: relative;
-    left: 15px;
-}
-.education li {
-    padding: 5px 0px;
-}
-.part-3 {
-    display: flex;
-}
-.softskills {
-    display: inline-block;
-    width: 300px;
-    background-color: rgba(189, 189, 189, .5);
-    padding: 10px;
-}
-.softskills p {
-    padding: 5px 0px;
-}
-.experience {
-    display: inline-block;
-    width: 600px;
-    padding: 10px;
-}
-.experience ul {
-    position: relative;
-    left: 15px;
-}
-.experience li {
-    padding: 5px 0px;
-}
-footer {
-    display: inline-block;
-    width: 300px;
-    background-color: rgba(189, 189, 189, .5);
-    padding: 10px;
-    align-items: center;
-}
-footer p {
-    margin: 10px 0px;
-}
-footer img {
-    height: 50px;
-}*/
