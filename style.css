@@ -48,6 +48,11 @@ body {
 .wrapper .header__container nav {
   font-weight: 700;
 }
+@media (max-width: 740px) {
+  .wrapper .header__container nav :first-child {
+    display: none;
+  }
+}
 .wrapper .header__container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,26 +84,41 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.wrapper .main .me .photo {
+.wrapper .main .me__container .photo {
   padding: 10px;
 }
-.wrapper .main .me .photo img {
+.wrapper .main .me__container .photo img {
   padding: 10px;
   width: 350px;
   border-radius: 50%;
   border: 5px solid #cecece;
 }
-.wrapper .main .me .title {
+@media (max-width: 400px) {
+  .wrapper .main .me__container .photo img {
+    width: 250px;
+  }
+}
+.wrapper .main .me__container .title {
   padding: 10px;
   font-weight: 700;
 }
-.wrapper .main .me .title h4 {
+.wrapper .main .me__container .title h4 {
   font-size: 42px;
   line-height: 150%;
 }
-.wrapper .main .me .title h5 {
+@media (max-width: 400px) {
+  .wrapper .main .me__container .title h4 {
+    font-size: 32px;
+  }
+}
+.wrapper .main .me__container .title h5 {
   font-size: 30px;
   line-height: 150%;
+}
+@media (max-width: 400px) {
+  .wrapper .main .me__container .title h5 {
+    font-size: 24px;
+  }
 }
 .wrapper .main .block__container {
   padding: 20px 15px;

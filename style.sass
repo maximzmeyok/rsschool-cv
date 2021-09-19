@@ -28,6 +28,9 @@ body
                 color: inherit
             nav
                 font-weight: 700
+                @media (max-width: 740px) 
+                    :first-child
+                        display: none
                 ul
                     display: flex
                     flex-wrap: wrap
@@ -44,22 +47,28 @@ body
                 align-items: center
                 justify-content: space-around
                 flex-wrap: wrap
-            .photo
-                padding: 10px
-                img
+                .photo
                     padding: 10px
-                    width: 350px
-                    border-radius: 50%
-                    border: 5px solid #cecece
-            .title
-                padding: 10px
-                font-weight: 700
-                h4
-                    font-size: 42px
-                    line-height: 150%
-                h5
-                    font-size: 30px
-                    line-height: 150%
+                    img
+                        padding: 10px
+                        width: 350px
+                        border-radius: 50%
+                        border: 5px solid #cecece
+                        @media (max-width: 400px) 
+                            width: 250px
+                .title
+                    padding: 10px
+                    font-weight: 700
+                    h4
+                        font-size: 42px
+                        line-height: 150%
+                        @media (max-width: 400px) 
+                            font-size: 32px
+                    h5
+                        font-size: 30px
+                        line-height: 150%
+                        @media (max-width: 400px) 
+                            font-size: 24px
         .block
             &__container
                 padding: 20px 15px
