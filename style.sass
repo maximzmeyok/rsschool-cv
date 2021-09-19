@@ -28,16 +28,38 @@ body
                 color: inherit
             nav
                 font-weight: 700
-                @media (max-width: 740px) 
-                    :first-child
-                        display: none
-                ul
+                position: relative
+                a
+                    color: inherit
+                .nav__first
                     display: flex
                     flex-wrap: wrap
                     li:not(:last-child)
                         margin: 0px 60px 0px 0px
-                    a
-                        color: inherit
+                    @media (max-width: 760px) 
+                        display: none
+                .nav__last
+                    display: none
+                    position: absolute
+                    right: -15px
+                    top: 44px
+                    background: #ffffff
+                    padding: 15px
+                    font-size: 24px
+                    line-height: 150%
+                input
+                    display: none
+                #check__menu:checked
+                    ~ .nav__last
+                        display: block
+                        @media (min-width: 760px)
+                            display: none
+            img
+                width: 24px
+                border: 2px solid #000000
+                cursor: pointer
+                @media (min-width: 760px)
+                    display: none
     .main
         flex: 1 1 auto
         .me
@@ -59,6 +81,7 @@ body
                 .title
                     padding: 10px
                     font-weight: 700
+                    text-align: center
                     h4
                         font-size: 42px
                         line-height: 150%

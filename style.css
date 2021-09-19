@@ -47,24 +47,56 @@ body {
 }
 .wrapper .header__container nav {
   font-weight: 700;
+  position: relative;
 }
-@media (max-width: 740px) {
-  .wrapper .header__container nav :first-child {
-    display: none;
-  }
+.wrapper .header__container nav a {
+  color: inherit;
 }
-.wrapper .header__container nav ul {
+.wrapper .header__container nav .nav__first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.wrapper .header__container nav ul li:not(:last-child) {
+.wrapper .header__container nav .nav__first li:not(:last-child) {
   margin: 0px 60px 0px 0px;
 }
-.wrapper .header__container nav ul a {
-  color: inherit;
+@media (max-width: 760px) {
+  .wrapper .header__container nav .nav__first {
+    display: none;
+  }
+}
+.wrapper .header__container nav .nav__last {
+  display: none;
+  position: absolute;
+  right: -15px;
+  top: 44px;
+  background: #ffffff;
+  padding: 15px;
+  font-size: 24px;
+  line-height: 150%;
+}
+.wrapper .header__container nav input {
+  display: none;
+}
+.wrapper .header__container nav #check__menu:checked ~ .nav__last {
+  display: block;
+}
+@media (min-width: 760px) {
+  .wrapper .header__container nav #check__menu:checked ~ .nav__last {
+    display: none;
+  }
+}
+.wrapper .header__container img {
+  width: 24px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+@media (min-width: 760px) {
+  .wrapper .header__container img {
+    display: none;
+  }
 }
 .wrapper .main {
   -webkit-box-flex: 1;
@@ -101,6 +133,7 @@ body {
 .wrapper .main .me__container .title {
   padding: 10px;
   font-weight: 700;
+  text-align: center;
 }
 .wrapper .main .me__container .title h4 {
   font-size: 42px;
