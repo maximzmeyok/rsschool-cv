@@ -6,89 +6,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Developer</title>
+    
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/agate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script>
+        console.log(
+        `I think that this CV deserves 145/160 points for the next reasons:
+
+        Не выполненные/не засчитанные пункты:
+        1) +0 Есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 3-5 минут (±15 секунд). В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке (например, в документе Google Docs).
+        
+        Частично выполненные пункты:
+        1) +5 Дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию.
+        
+        Выполненные пункты:
+        1) +10 Вёрстка валидная (проверить валидность вёрстки: https://validator.w3.org/);
+        2) +20 Вёрстка семантическая. В коде страницы присутствуют семантические теги HTML5, например, article, aside, figure, figcaption, footer, header, main, nav, section, используются заголовки h1-h6 (2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок h1-h6, но не больше 20 баллов; заголовок h1 может быть только один);
+        3) +10 Для оформления СV используются css-стили (1 балл за каждый стилизованный элемент, но не больше 10 баллов);
+        4) +10 Контент размещается в блоке, который горизонтально центрируется на странице; фоновый цвет, если он есть, тянется во всю ширину страницы;
+        5) +10 Вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется;
+        6) +10 Есть адаптивное бургер-меню; ссылки в пунктах меню ведут на основные разделы CV; при кликах по пунктам меню реализована плавная прокрутка по якорям; при уменьшении ширины экрана меню становится адаптивным;
+        7) +10 На странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым);
+        8) +10 Контакты для связи и перечень навыков оформлены в виде списка ul > li;
+        9) +10 CV содержит контакты, краткую информацию о себе, навыки, образование, уровень английского;
+        10) +10 CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода;
+        11) +10 CV содержит изображения-ссылки на выполненные вами проекты; при клике по изображению страница проекта открывается в новой вкладке; у каждого проекта есть название, небольшое описание, указан перечень используемых технологий;
+        12) +10 CV выполнено на английском языке;
+        13) +10 Выполнены требования к репозиторию: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, указана дата дедлайна, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт).`)
+    </script>
 </head>
 
 <body>
-    <div class="cv">
-        <div class="part-1">
-            <aside class="img-wrapper">
-                <div class="img"><img src="cv.jpg" alt="My Photo"></div>
-            </aside>
-            <header class="title">
-                <h1>Maxim Zmeyok</h1>
-                <h2>JavaScript (React) Developer</h2>
-                <ul>
-                    <li>
-                        <h2>Contacts</h2>
-                    </li>
-                    <li><b>Address:</b> Gomel, Belarus</li>
-                    <li><b>Phone:</b> +375292373818</li>
-                    <li><b>Email:</b> maxim_zmeyok@mail.ru</li>
-                </ul>
-            </header>
-        </div>
-        <div class="part-2">
-            <main class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML / CSS</li>
-                    <li>SASS / SCSS / LESS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Git</li>
-                    <li>English (A2 - Pre-Intermediate)</li>
-                </ul>
-            </main>
-            <section class="education">
-                <h2>Education</h2>
-                <div class="education-university">
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container black">
+                <h1>CV</h1>
+                <nav>
+                    <ul class="nav__first">
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                    <input type="checkbox" id="check__menu" class="burger">
+                    <ul class="nav__last">
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                    <label for="check__menu">
+                        <img src="./burger.svg" alt="Menu">
+                    </label>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="me">
+                <div class="me__container container">
+                    <div class="photo">
+                        <img src="./cv.jpg" alt="My photo" class="maxim__zmeyok">
+                    </div>
+                    <div class="title">
+                        <h4>Maxim Zmeyok</h4>
+                        <h5>JavaScript Developer</h5>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block__container container black">
+                    <h2 id="contacts">Contacts</h2>
+                    <ul>
+                        <li><span>Address: </span>Gomel, Belarus</li>
+                        <li><span>Phone: </span>+375292373818</li>
+                        <li><span>Email: </span>maxim_zmeyok@mail.ru</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block__container container">
+                    <h2 id="skills">Skills</h2>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>SASS / SCSS / LESS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Git</li>
+                        <li>English (A2 - Pre-Intermediate)</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block__container container black">
+                    <h2 id="education">Education</h2>
                     <h3>University</h3>
                     <ul>
                         <li>Belarussian State University of Transport (Bacleor of Architecture, 2013-2019)</li>
                     </ul>
-                </div>
-                <div class="education-cources">
                     <h3>Cources</h3>
                     <ul>
-                        <li>Rolling Scope School (JS/FE Pre-School 2021Q3)</li>
                         <li>Rolling Scope School (JS/FE 2021Q3)</li>
                         <li>Udemy (JavaScript 2021 by Vladilen Minin, 2021)</li>
                     </ul>
                 </div>
             </section>
-        </div>
-        <div class="part-3">
-            <aside class="softskills">
-                <h2>About me</h2>
-                <p>The main aim of my life is mental and physical development. I’m always ready to take lots of
-                    responsibilities, to change myself and to learn new things. I’m very friendly and positive person. I
-                    don’t have bad habits and I’ve already served in army.</p>
-                <p>I've been learning English for about a year by myself and I've already reached a Pre-Intermediate
-                    level (A2). I think it's a good result but I'm planing to reach an Intermediate level (B1) of
-                    English by at the end of this year.</p>
-            </aside>
-            <section class="experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li>Architect (VGP, 2019-2021)</li>
-                    <li>Wildlife (Rolling Scope School, 2021)</li>
-                    <li>Here will placed future projects</li>
-                </ul>
+            <section class="block">
+                <div class="block__container container">
+                    <h2 id="experience">Experience</h2>
+                    <h3>Example of code</h3>
+                    <h4>Task (Codewars):</h4>
+                    <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them). Note: If the number is a multiple of both 3 and 5, only count it once.</p>
+                    <h4>Solution:</h4>
+                    <pre><code class="language-javascript">function solution(number) {
+    if (number &lt; 0) {
+        return 0
+    } else {
+        let arr = []
+        for (let i = 0; i &lt; number; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+            arr.push(i)
+            }
+        }
+        return arr.reduce((sum, current) => sum + current, 0)
+    }
+}</code></pre>
+                    <h3>Projects</h3>
+                    <h4>Codewars:</h4>
+                    <a target="_blank" href="https://www.codewars.com/users/maximzmeyok/completed_solutions"><img src="./codewars.jpg" alt="Codewars"></a>
+                    <p>Solutions of tasks (JavaScript).</p>
+                    <h4>Museum:</h4>
+                    <a target="_blank" href="https://rolling-scopes-school.github.io/maximzmeyok-JSFEPRESCHOOL/museum/"><img src="./museum.jpg" alt="Museum"></a>
+                    <p>Website of Louvre Museum (HTML / CSS / SASS).</p>
+                    <h4>Wildlife:</h4>
+                    <a target="_blank" href="https://rolling-scopes-school.github.io/maximzmeyok-JSFE2021Q1/wildlife/"><img src="./wildlife.jpg" alt="Wildlife"></a>
+                    <p>Website of helping planet and wildlife (HTML / CSS / SASS).</p>
+                </div>
             </section>
-        </div>
+            <section class="block">
+                <div class="block__container container black">
+                    <h2 id="about">About</h2>
+                    <p>The main aim of my life is mental and physical development. I’m always ready to take lots of
+                        responsibilities, to change myself and to learn new things. I’m very friendly and positive person. I
+                        don’t have bad habits and I’ve already served in army.</p>
+                </div>
+            </section>
+        </main>
 
-        <footer>
-            <div>
-                <a href="https://github.com/maximzmeyok"><b>GitHUB</b></a>
-            </div>
-            <div>
-                <p><b>2021</b></p>
-            </div>
-            <div>
-                <a href="https://rs.school/js/">
-                    <img src="rsschool.svg" alt="RSS logo">
+        <footer class="footer">
+            <div class="footer__container container">
+                <a target="_blank" href="https://rs.school/js/">
+                    <img src="./rsschool.svg" alt="RSS logo">
                 </a>
+                <a target="_blank" href="https://github.com/maximzmeyok">GitHUB</a>
+                <p>2021</p>
             </div>
         </footer>
     </div>
