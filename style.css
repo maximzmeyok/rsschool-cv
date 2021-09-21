@@ -1,0 +1,208 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  font-family: Montserrat;
+  line-height: 150%;
+  background-color: #2c2c2c;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0px auto;
+  background-color: #ebebeb;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .header__container {
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .header__container > h1 {
+  padding: 0px 80px 0px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+}
+.wrapper .header__container nav {
+  font-weight: 700;
+  position: relative;
+}
+.wrapper .header__container nav a {
+  color: inherit;
+}
+.wrapper .header__container nav .nav__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wrapper .header__container nav .nav__first li:not(:last-child) {
+  margin: 0px 60px 0px 0px;
+}
+@media (max-width: 760px) {
+  .wrapper .header__container nav .nav__first {
+    display: none;
+  }
+}
+.wrapper .header__container nav .nav__last {
+  display: none;
+  position: absolute;
+  right: -15px;
+  top: 44px;
+  background: #ffffff;
+  padding: 15px;
+  font-size: 24px;
+  line-height: 150%;
+}
+.wrapper .header__container nav input {
+  display: none;
+}
+.wrapper .header__container nav #check__menu:checked ~ .nav__last {
+  display: block;
+}
+@media (min-width: 760px) {
+  .wrapper .header__container nav #check__menu:checked ~ .nav__last {
+    display: none;
+  }
+}
+.wrapper .header__container img {
+  width: 24px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+@media (min-width: 760px) {
+  .wrapper .header__container img {
+    display: none;
+  }
+}
+.wrapper .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.wrapper .main .me__container {
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wrapper .main .me__container .photo {
+  padding: 10px;
+}
+.wrapper .main .me__container .photo img {
+  padding: 10px;
+  width: 350px;
+  border-radius: 50%;
+  border: 5px solid #cecece;
+}
+@media (max-width: 400px) {
+  .wrapper .main .me__container .photo img {
+    width: 250px;
+  }
+}
+.wrapper .main .me__container .title {
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+.wrapper .main .me__container .title h4 {
+  font-size: 42px;
+  line-height: 150%;
+}
+@media (max-width: 400px) {
+  .wrapper .main .me__container .title h4 {
+    font-size: 32px;
+  }
+}
+.wrapper .main .me__container .title h5 {
+  font-size: 30px;
+  line-height: 150%;
+}
+@media (max-width: 400px) {
+  .wrapper .main .me__container .title h5 {
+    font-size: 24px;
+  }
+}
+.wrapper .main .block__container {
+  padding: 20px 15px;
+}
+.wrapper .main .block__container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.wrapper .main .block__container h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrapper .main .block__container h4 {
+  font-weight: 700;
+}
+.wrapper .main .block__container span {
+  font-weight: 700;
+}
+.wrapper .main .block__container pre {
+  padding-bottom: 10px;
+}
+.wrapper .main .block__container img {
+  width: 50px;
+  border-radius: 50%;
+}
+.wrapper .footer__container {
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 700;
+}
+.wrapper .footer__container a {
+  padding: 0px 10px;
+}
+.wrapper .footer__container img {
+  height: 30px;
+}
+.wrapper .footer__container p {
+  padding: 0px 10px;
+}
+
+.black {
+  background-color: #cecece;
+}
